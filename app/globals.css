@@ -28,6 +28,19 @@
 }
 
 
+.subtitle-1 {
+  font-size: var(--subtitle-1-size);
+  line-height: var(--subtitle-1-line);
+  font-weight: var(--subtitle-1-weight);
+}
+
+.subtitle-2 {
+  font-size: var(--subtitle-2-size);
+  line-height: var(--subtitle-2-line);
+  font-weight: var(--subtitle-2-weight);
+}
+
+
 
 .auth-form {
   display: flex;
