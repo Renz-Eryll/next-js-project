@@ -881,7 +881,7 @@
   display: flex;
   height: 60px;
   justify-content: space-between;
-  padding: 1.25rem;
+  padding: 1rem;
 }
 
 @media (min-width: 640px) {
@@ -1211,7 +1211,7 @@ body {
   --shadow-drop-1: 0 4px 6px rgba(0, 0, 0, 0.08);
 
   --brand-100: #4B2FCB;
-  --brand: #5D3FD3;
+  --brand: #BA68C8;
   --red: #FF7474;
   --error: #b80000;
   --green: #3DD9B3;

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import React from "react";
+
 interface Props {
   fullName: string;
   avatar: string;
@@ -18,14 +19,14 @@ const Sidebar = ({ fullName, avatar, email }: Props) => {
     <aside className="sidebar">
       <Link href="/">
         <Image
-          src="/assets/icons/logo-sync.svg"
+          src="/assets/icons/Logo-brand.svg"
           alt="logo"
           width={160}
           height={50}
           className="hidden h-auto lg:block"
         />
         <Image
-          src="/assets/icons/favicon.ico"
+          src="/assets/icons/Logo--.svg"
           alt="logo"
           width={42}
           height={42}
@@ -62,8 +63,8 @@ const Sidebar = ({ fullName, avatar, email }: Props) => {
       <Image
         src="/assets/images/sidebarr.svg"
         alt="logo"
-        width={100}
-        height={100}
+        width={50}
+        height={50}
         className="w-full hidden lg:block"
       />
       <div className="sidebar-user-info">
