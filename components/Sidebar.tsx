@@ -65,7 +65,7 @@ const Sidebar = ({ fullName, avatar, email }: Props) => {
         alt="logo"
         width={50}
         height={50}
-        className="w-full hidden lg:block"
+        className="w-75 hidden lg:block"
       />
       <div className="sidebar-user-info">
         <Image

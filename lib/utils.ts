@@ -6,5 +6,6 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export const parseStringify = (value: unknown) => {
+  if (typeof value === "undefined") return null;
   return JSON.parse(JSON.stringify(value));
 };
