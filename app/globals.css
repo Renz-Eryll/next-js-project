@@ -15,6 +15,13 @@
   font-weight: var(--h2-weight);
 }
 
+.h4 {
+  font-size: var(--h4-size);
+  line-height: var(--h4-line);
+  font-weight: var(--h4-weight);
+}
+
+
 .body-1 {
   font-size: var(--body-1-size);
   line-height: var(--body-1-line);
@@ -780,7 +787,7 @@
 }
 
 .uploader-button:hover {
-  background: var(--brand-hover);
+  background: var(--brand-100);
 }
 
 .uploader-preview-list {
@@ -822,7 +829,7 @@
 }
 
 .error-toast {
-  background: var(--red);
+  background: var(--brand-100);
   border-radius: 10px;
   padding: 1rem 1.5rem;
   color: var(--white);
@@ -1210,7 +1217,7 @@ body {
 
   --shadow-drop-1: 0 4px 6px rgba(0, 0, 0, 0.08);
 
-  --brand-100: #4B2FCB;
+  --brand-100: #9C4EAF;
   --brand: #BA68C8;
   --red: #FF7474;
   --error: #b80000;

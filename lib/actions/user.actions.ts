@@ -5,7 +5,7 @@ import { createAdminClient, createSessionClient } from "@/lib/appwrite";
 import { appwriteConfig } from "../appwrite/config";
 import { parseStringify } from "../utils";
 import { cookies } from "next/headers";
-import { avatarPlaceholderUrl } from "@/app/constants";
+import { avatarPlaceholderUrl } from "@/constants";
 import { redirect } from "next/dist/server/api-utils";
 
 const getUserByEmail = async (email: string) => {

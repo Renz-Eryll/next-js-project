@@ -8,7 +8,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { avatarPlaceholderUrl, navItems } from "@/app/constants";
+import { avatarPlaceholderUrl, navItems } from "@/constants";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Separator } from "./ui/separator";
@@ -19,7 +19,7 @@ import { Button } from "./ui/button";
 import { signOutUser } from "@/lib/actions/user.actions";
 
 interface Props {
-  ownerId: string;
+  $id: string;
   accountId: string;
   fullName: string;
   avatar: string;
@@ -27,7 +27,7 @@ interface Props {
 }
 
 const MobileNavigation = ({
-  ownerId,
+  $id: ownerId,
   accountId,
   fullName,
   avatar,
@@ -99,7 +99,7 @@ const MobileNavigation = ({
           </nav>
           <Separator className="my-5" />
           <div className="flex flex-col justify-between gap-5 pb-5">
-            <FileUploader />
+            <FileUploader ownerId={ownerId} accountId={accountId} />
             <Button
               type="submit"
               className="mobile-sign-out-button"
