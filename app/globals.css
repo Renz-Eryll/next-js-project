@@ -21,6 +21,12 @@
   font-weight: var(--h4-weight);
 }
 
+.h5 {
+  font-size: var(--h5-size);
+  line-height: var(--h5-line);
+  font-weight: var(--h5-weight);
+}
+
 
 .body-1 {
   font-size: var(--body-1-size);
