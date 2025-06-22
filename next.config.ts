@@ -13,6 +13,7 @@ const nextConfig: NextConfig = {
     },
   },
   images: {
+    domains: ["fra.cloud.appwrite.io"],
     remotePatterns: [
       {
         protocol: "https",
