@@ -6,7 +6,7 @@ import { appwriteConfig } from "../appwrite/config";
 import { parseStringify } from "../utils";
 import { cookies } from "next/headers";
 import { avatarPlaceholderUrl } from "@/constants";
-import { redirect } from "next/dist/server/api-utils";
+import { redirect } from "next/navigation";
 
 const getUserByEmail = async (email: string) => {
   const { databases } = await createAdminClient();
