@@ -93,23 +93,39 @@ export const verifySecret = async ({
 };
 
 export const getCurrentUser = async () => {
-  const { databases, account } = await createSessionClient();
+  const sessionClient = await createSessionClient().catch(() => null);
 
-  const result = await account.get();
+  if (!sessionClient) return null;
 
-  const user = await databases.listDocuments(
-    appwriteConfig.databaseId,
-    appwriteConfig.usersCollectionId,
-    [Query.equal("accountId", result.$id)]
-  );
+  const { databases, account } = sessionClient;
 
-  if (user.total < 0) return null;
+  try {
+    const result = await account.get();
 
-  return parseStringify(user.documents[0]);
+    const user = await databases.listDocuments(
+      appwriteConfig.databaseId,
+      appwriteConfig.usersCollectionId,
+      [Query.equal("accountId", result.$id)]
+    );
+
+    if (user.total <= 0) return null;
+
+    return parseStringify(user.documents[0]);
+  } catch (error) {
+    console.error("Failed to fetch current user", error);
+    return null;
+  }
 };
 
 export const signOutUser = async () => {
-  const { account } = await createSessionClient();
+  const sessionClient = await createSessionClient().catch(() => null);
+
+  if (!sessionClient) {
+    redirect("/sign-in");
+    return;
+  }
+
+  const { account } = sessionClient;
 
   try {
     await account.deleteSession("current");
