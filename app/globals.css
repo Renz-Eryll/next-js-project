@@ -9,6 +9,27 @@
   font-weight: var(--h1-weight);
 }
 
+
+.caption {
+  font-size: var(--caption-size);
+  line-height: var(--caption-line);
+  font-weight: var(--caption-weight);
+}
+
+.button {
+  font-size: var(--button-size);
+  line-height: var(--button-line);
+  font-weight: var(--button-weight);
+}
+
+
+.overline {
+  font-size: var(--overline-size);
+  line-height: var(--overline-line);
+  font-weight: var(--overline-weight);
+}
+
+
 .h2 {
   font-size: var(--h2-size);
   line-height: var(--h2-line);
