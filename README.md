@@ -25,7 +25,7 @@
 - 🔒 Secure authentication and file storage powered by **Appwrite**  
 - 🎨 Modern and responsive UI with **Tailwind CSS** + **Shadcn UI**  
 - ⚡ Optimized performance with **Next.js 15**  
-- 🌙 Clean design for both light and dark modes  
+- 🌙 Clean design
 
 ---
 
